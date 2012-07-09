@@ -25,15 +25,15 @@
                 <li><a href="<?php echo site_url('pim/professional_development'); ?>" title="">Professional Development</a></li>
                 <li><a href="<?php echo site_url('pim/occupational'); ?>" title="">Occupational</a></li>
                 <li><a href="<?php echo site_url('pim/family'); ?>" title="">Family Details</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Employment</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Compesation &amp; Benefits</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">EA Information</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Medical</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Disciplinary Records</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Service History</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Appraisal</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Leave</a></li>
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Benefeciary Information</a></li>
+                <li><a href="<?php echo site_url('pim/employment'); ?>" title="">Employment</a></li>
+                <li><a href="<?php echo site_url('pim/compensation_benefits'); ?>" title="">Compensation &amp; Benefits</a></li>
+                <li><a href="<?php echo site_url('pim/ea'); ?>" title="">EA Information</a></li>
+                <li><a href="<?php echo site_url('pim/medical'); ?>" title="">Medical</a></li>
+                <li><a href="<?php echo site_url('pim/disciplinary'); ?>" title="">Disciplinary Records</a></li>
+                <li><a href="<?php echo site_url('pim/service'); ?>" title="">Service History</a></li>
+                <li><a href="<?php echo site_url('pim/appraisal'); ?>" title="">Appraisal</a></li>
+                <li><a href="<?php echo site_url('pim/leave'); ?>" title="">Leave</a></li>
+                <li><a href="<?php echo site_url('pim/beneficiary'); ?>" title="">Benefeciary Information</a></li>
             </ul>
         </li>
 		<li class="benefits"><a href="#" title="" class="exp"><span>Compensation & Benefits</span></a>
