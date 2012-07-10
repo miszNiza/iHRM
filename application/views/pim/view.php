@@ -47,7 +47,7 @@
         <div class="wrapper">
             <div class="pageTitle">
                 <h5>Personal Information Module</h5>
-                <span>Personal Information</span>
+                <span><?php echo $form['title']; ?></span>
             </div>
             <div class="middleNav">
                 <ul>
@@ -88,7 +88,7 @@
     <!-- Main content wrapper -->
     <div class="wrapper">
         
-        <?php $this->load->view('pim/forms/personal',$data); ?>
+        <?php $this->load->view('pim/forms/'.$form['template'], $employee_data); ?>
         
      
     </div>
