@@ -1,6 +1,6 @@
 <!-- Left side content -->
 <div id="leftSide">
-    <div class="logo"><a href="index.html"><img src="<?php echo site_url('assets/images'); ?>/uda_logo.png" alt="" /></a></div>
+    <div class="logo"><a href="<?php echo site_url(); ?>"><img src="<?php echo site_url('assets/images'); ?>/uda_logo.png" alt="" /></a></div>
     
     <div class="sidebarSep mt0"></div>
     
@@ -14,26 +14,58 @@
     
     <!-- Left navigation -->
     <ul id="menu" class="nav">
-        <li class="dash"><a href="<?php echo site_url(); ?>" title=""><span>Dashboard</span></a></li>
+        <li class="dash"><a href="<?php echo site_url(); ?>" title="" class="<?php if($module=='dashboard') echo 'active'; ?>"><span>Dashboard</span></a></li>
         <li class="charts"><a href="charts.html" title=""><span>Reports</span></a></li>
-        <li class="forms"><a href="#" title="" class="exp active"><span>PIM</span></a>
+        <li class="forms"><a href="<?php echo site_url('pim/employees'); ?>" title="Personal Information Management" class="exp <?php if($module=='pim') echo 'active'; ?>" <?php if($module=='pim') echo 'id="current"'; ?>><span>PIM</span></a>
             <ul class="sub">
-                <li><a href="<?php echo site_url('pim/personal'); ?>" title="">Personal Information</a></li>
-                <li><a href="<?php echo site_url('pim/contact'); ?>" title="">Contacts</a></li>
-                <li><a href="<?php echo site_url('pim/education'); ?>" title="">Education</a></li>
-                <li><a href="<?php echo site_url('pim/skill_competency'); ?>" title="">Skills And Competency</a></li>
-                <li><a href="<?php echo site_url('pim/professional_development'); ?>" title="">Professional Development</a></li>
-                <li><a href="<?php echo site_url('pim/occupational'); ?>" title="">Occupational</a></li>
-                <li><a href="<?php echo site_url('pim/family'); ?>" title="">Family Details</a></li>
-                <li><a href="<?php echo site_url('pim/employment'); ?>" title="">Employment</a></li>
-                <li><a href="<?php echo site_url('pim/compensation_benefits'); ?>" title="">Compensation &amp; Benefits</a></li>
-                <li><a href="<?php echo site_url('pim/ea'); ?>" title="">EA Information</a></li>
-                <li><a href="<?php echo site_url('pim/medical'); ?>" title="">Medical</a></li>
-                <li><a href="<?php echo site_url('pim/disciplinary'); ?>" title="">Disciplinary Records</a></li>
-                <li><a href="<?php echo site_url('pim/service'); ?>" title="">Service History</a></li>
-                <li><a href="<?php echo site_url('pim/appraisal'); ?>" title="">Appraisal</a></li>
-                <li><a href="<?php echo site_url('pim/leave'); ?>" title="">Leave</a></li>
-                <li><a href="<?php echo site_url('pim/beneficiary'); ?>" title="">Benefeciary Information</a></li>
+                <li <?php if($form['template'] == 'personal') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/personal'); ?>" title="">Personal Information</a>
+                </li>
+                <li <?php if($form['template'] == 'contact') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/contact'); ?>" title="">Contacts</a>
+                </li>
+                <li <?php if($form['template'] == 'education') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/education'); ?>" title="">Education</a>
+                </li>
+                <li <?php if($form['template'] == 'skills') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/skill_competency'); ?>" title="">Skills And Competency</a>
+                </li>
+                <li <?php if($form['template'] == 'development') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/professional_development'); ?>" title="">Professional Development</a>
+                </li>
+                <li <?php if($form['template'] == 'occupational') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/occupational'); ?>" title="">Occupational</a>
+                </li>
+                <li <?php if($form['template'] == 'family') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/family'); ?>" title="">Family Details</a>
+                </li>
+                <li <?php if($form['template'] == 'employment') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/employment'); ?>" title="">Employment</a>
+                </li>
+                <li <?php if($form['template'] == 'compensation') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/compensation_benefits'); ?>" title="">Compensation &amp; Benefits</a>
+                </li>
+                <li <?php if($form['template'] == 'ea') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/ea'); ?>" title="">EA Information</a>
+                </li>
+                <li <?php if($form['template'] == 'medical') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/medical'); ?>" title="">Medical</a>
+                </li>
+                <li <?php if($form['template'] == 'disciplinary') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/disciplinary'); ?>" title="">Disciplinary Records</a>
+                </li>
+                <li <?php if($form['template'] == 'service') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/service'); ?>" title="">Service History</a>
+                </li>
+                <li <?php if($form['template'] == 'appraisal') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/appraisal'); ?>" title="">Appraisal</a>
+                </li>
+                <li <?php if($form['template'] == 'leave') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/leave'); ?>" title="">Leave</a>
+                </li>
+                <li <?php if($form['template'] == 'benefeciary') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/beneficiary'); ?>" title="">Benefeciary Information</a>
+                </li>
             </ul>
         </li>
 		<li class="benefits"><a href="#" title="" class="exp"><span>Compensation & Benefits</span></a>
