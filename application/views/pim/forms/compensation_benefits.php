@@ -1,5 +1,4 @@
-<!--form for compensation & benefits information-->
-<?php echo form_open('',array('class'=>'form'),array('employee_id'=>$employee_id))?>
+    <?php echo form_open('',array('class'=>'form'),array('employee_id'=>$employee_id))?>
 <fieldset>
     <div class="widget">
         <div class="title"><img src="<?php echo site_url('assets/images'); ?>/icons/dark/list.png" alt="" class="titleIcon" /><h6></h6></div>
@@ -116,6 +115,64 @@
             </div>
             <div class="clear"></div>
         </div>
+        
+        <div class="formRow">
+            <label>Allowance Entitlement</label>
+            <div class="formRight">
+                <?php echo form_radio('allowance', 'Housing', FALSE, 'id="allow_house"');?><?php echo form_label('Housing', 'allow_house');?>
+                <?php echo form_radio('allowance', 'Travelling', FALSE, 'id="allow_travel"');?><?php echo form_label('Travelling','allow_travel');?>
+                <?php echo form_radio('allowance', 'Hardship', FALSE, 'id="allow_hardship"');?><?php echo form_label('Hardship', 'allow_hardship');?>
+                <?php echo form_radio('allowance', 'Others', FALSE, 'id="allow_other"');?><?php echo form_label('Others','allow_other');?>
+           </div>
+            <div class="clear"></div>
+        </div>
  </div>
 </fieldset>
+<fieldset>
+     <div class="widget">
+        <div class="title"><img src="<?php echo site_url('assets/images'); ?>/icons/dark/list.png" alt="" class="titleIcon" /><h6></h6></div>
+        <div class="formRow">
+            <label>EPF No.</label>
+            <div class="formRight"><?php echo form_input(array('name'=>'epf_no')); ?></div>
+                   <div class="clear"></div>
+        </div>
+        <div class="formRow">
+            <label>SOCSO No.</label>
+           <div class="formRight"><?php echo form_input(array('name'=>'socso_no'));?></div>
+               <div class="clear"></div>
+        </div>
+        <div class="formRow">
+            <label>Zakat Contribution <br/>
+                    (Ref No.)</label>
+           <div class="formRight"><?php echo form_input(array('name'=>'zakat_contri'));?></div>
+               <div class="clear"></div>
+        </div>
+        
+        <div class="formRow">
+            <label>Income Tax File No.</label>
+            <div class="formRight"><?php echo form_input(array('name'=>'income_tax'));?></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="formRow"><label>Branch</label>
+            <div class="formRight"><?php echo form_input(array('name'=>'branch'));?></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="formRow">
+            <label>Retirement Schema Ref.</label>
+            <div class="formRight"><?php echo form_input(array('name'=>'retired_ref'));?></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="formRow">
+            <label>Date of Retirement</label>
+            <div class="formRight">
+                <?php echo form_input(array('name'=>'date_retired','class'=>'datepicker'));?>
+            </div>
+                    <div class="clear"></div> 
+            </div>
+        </div>      
+</fieldset>
+
 <?php echo form_close();?>
