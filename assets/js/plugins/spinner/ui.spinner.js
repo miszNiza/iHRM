@@ -7,6 +7,7 @@
  *
  * http://docs.jquery.com/UI
  */
+
 (function($) {
 
 /** jQuery core modifications and additions **/
@@ -883,3 +884,4 @@ $.extend($.ui.spinner, {
 });
 
 })(jQuery);
+

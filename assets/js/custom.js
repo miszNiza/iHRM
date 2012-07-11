@@ -1,4 +1,11 @@
+$(document).ready(function(){
+    custom();
+});
+
+function custom() {
+
 $(function() {
+
 	
 	
 /* Form related plugins
@@ -879,3 +886,4 @@ $(function() {
 
 	
 });
+}
