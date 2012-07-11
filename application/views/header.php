@@ -19,6 +19,7 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
+
 <script type="text/javascript" src="<?php echo site_url('assets/js'); ?>/plugins/charts/excanvas.min.js"></script>
 <script type="text/javascript" src="<?php echo site_url('assets/js'); ?>/plugins/charts/jquery.flot.js"></script>
 <script type="text/javascript" src="<?php echo site_url('assets/js'); ?>/plugins/charts/jquery.flot.orderBars.js"></script>
@@ -64,8 +65,9 @@
 <script type="text/javascript" src="<?php echo site_url('assets/js'); ?>/plugins/elfinder.min.js"></script>
 
 <script type="text/javascript" src="<?php echo site_url('assets/js'); ?>/custom.js"></script>
-
+<!--
 <script type="text/javascript" src="<?php echo site_url('assets/js'); ?>/charts/chart.js"></script>
+-->
 
 </head>
 

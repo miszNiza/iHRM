@@ -13,7 +13,7 @@ class Contact extends CI_Controller
 	public function index(){
             
             $this->data['form'] = array(
-                'title'=>'Contact Information',
+                'title'=>'Employee Contact Information',
                 'template'=>'contact'
             );
             

@@ -12,7 +12,7 @@ class Personal extends CI_Controller {
 	public function index(){
             
             $this->data['form'] = array(
-                'title'=>'Personal Information',
+                'title'=>'Employee Personal Information',
                 'template'=>'personal'
             );
             
