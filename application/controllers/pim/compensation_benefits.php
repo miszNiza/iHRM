@@ -12,7 +12,7 @@ class Compensation_benefits extends CI_Controller {
 	public function index(){
             
             $this->data['form'] = array(
-                'title'=>'Personal Information',
+                'title'=>'Compensation Benefits',
                 'template'=>'compensation_benefits'
             );
             
