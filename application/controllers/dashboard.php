@@ -6,6 +6,10 @@ class Dashboard extends CI_Controller {
     
     public function __construct() {
         parent::__construct();
+        
+        if(!user_logged_in())
+            redirect ('login');
+        
         $this->data['module'] = 'dashboard';
     }
     
