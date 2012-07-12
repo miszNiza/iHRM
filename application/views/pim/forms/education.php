@@ -108,6 +108,7 @@
                 collegeRowCount++;
                 $('#college tbody').append(collegeRow);
                
+               
                return false;
             });
         });
