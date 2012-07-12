@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Professional_development extends CI_Controller 
+class Skills extends CI_Controller 
 {
 	public $data;
 	
@@ -13,8 +13,8 @@ class Professional_development extends CI_Controller
 	public function index(){
             
             $this->data['form'] = array(
-                'title'=>'Employee Professional Development Information',
-                'template'=>'development'
+                'title'=>'Employee Skills and Competency Information',
+                'template'=>'skills'
             );
             
             $this->load->view('header',$this->data);

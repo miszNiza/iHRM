@@ -99,9 +99,9 @@
         <div class="formRow">
             <label>Loans</label>
             <div class="formRight">
-                <?php echo form_radio('loan','Housing', FALSE, 'id="loan_house"');?><?php echo form_label('Housing', 'loan_house');?>
-                <?php echo form_radio('loan', 'Vehicle', FALSE, 'id="loan_vehicle"');?><?php echo form_label('Vehicle', 'loan_vehicle');?>
-                <?php echo form_radio('loan', 'Soft Loan', FALSE, 'id="loan_soft"');?><?php echo form_label('Soft Loan', 'loan_soft');?>
+                <?php echo form_checkbox('loan','Housing', FALSE, 'id="loan_house"');?><?php echo form_label('Housing', 'loan_house');?>
+                <?php echo form_checkbox('loan', 'Vehicle', FALSE, 'id="loan_vehicle"');?><?php echo form_label('Vehicle', 'loan_vehicle');?>
+                <?php echo form_checkbox('loan', 'Soft Loan', FALSE, 'id="loan_soft"');?><?php echo form_label('Soft Loan', 'loan_soft');?>
             </div>
             <div class="clear"></div>
         </div>
@@ -109,9 +109,9 @@
         <div class="formRow">
             <label>Employer Contribution</label>
             <div class="formRight">
-                <?php echo form_radio('contribute', 'EPF', FALSE, 'id="contri_epf"');?><?php echo form_label('EPF', 'contri_epf');?>
-                <?php echo form_radio('contribute', 'Pension/Retired', FALSE, 'id="contri_pension"');?><?php echo form_label('Pension/Retired','contri_pension');?>
-                <?php echo form_radio('contribute', 'SOCSO', FALSE, 'id="contri_socso"');?><?php echo form_label('SOCSO', 'contri_socso');?>
+                <?php echo form_checkbox('contribute', 'EPF', FALSE, 'id="contri_epf"');?><?php echo form_label('EPF', 'contri_epf');?>
+                <?php echo form_checkbox('contribute', 'Pension/Retired', FALSE, 'id="contri_pension"');?><?php echo form_label('Pension/Retired','contri_pension');?>
+                <?php echo form_checkbox('contribute', 'SOCSO', FALSE, 'id="contri_socso"');?><?php echo form_label('SOCSO', 'contri_socso');?>
             </div>
             <div class="clear"></div>
         </div>
@@ -119,10 +119,22 @@
         <div class="formRow">
             <label>Allowance Entitlement</label>
             <div class="formRight">
-                <?php echo form_radio('allowance', 'Housing', FALSE, 'id="allow_house"');?><?php echo form_label('Housing', 'allow_house');?>
-                <?php echo form_radio('allowance', 'Travelling', FALSE, 'id="allow_travel"');?><?php echo form_label('Travelling','allow_travel');?>
-                <?php echo form_radio('allowance', 'Hardship', FALSE, 'id="allow_hardship"');?><?php echo form_label('Hardship', 'allow_hardship');?>
-                <?php echo form_radio('allowance', 'Others', FALSE, 'id="allow_other"');?><?php echo form_label('Others','allow_other');?>
+                <?php echo form_checkbox('allowance', 'Housing', FALSE, 'id="allow_house"');?><?php echo form_label('Housing', 'allow_house');?>
+                <?php echo form_checkbox('allowance', 'Travelling', FALSE, 'id="allow_travel"');?><?php echo form_label('Travelling','allow_travel');?>
+                <?php echo form_checkbox('allowance', 'Hardship', FALSE, 'id="allow_hardship"');?><?php echo form_label('Hardship', 'allow_hardship');?>
+                <?php echo form_checkbox('allowance', 'Others', FALSE, 'id="allow_other"');?><?php echo form_label('Others','allow_other');?>
+           </div>
+            <div class="clear"></div>
+        </div>
+        <div class="formRow">
+            <label>Company's Belongings</label>
+            <div class="formRight">
+                <?php echo form_checkbox('company_belongings', 'House', FALSE, 'id="belong_house"');?><?php echo form_label('House', 'belong_house');?>
+                <?php echo form_checkbox('company_belongings', 'Vehicle', FALSE, 'id="belong_vehicle"');?><?php echo form_label('Vehicle','belong_vehicle');?>
+                <?php echo form_checkbox('company_belongings', 'Petrol Card', FALSE, 'id="belong_petrol"');?><?php echo form_label('Petrol Card', 'belong_petrol');?>
+                <?php echo form_checkbox('company_belongings', 'Credit Card', FALSE, 'id="belong_credit"');?><?php echo form_label('Credit Card','belong_credit');?>
+                <?php echo form_checkbox('company_belongings', 'Laptop / Notebook', FALSE, 'id="belong_laptop"');?><?php echo form_label('Laptop / Notebook','belong_laptop');?>
+                <?php echo form_checkbox('company_belongings', 'Handphone', FALSE, 'id="belong_handphone"');?><?php echo form_label('Handphone','belong_handphone');?>
            </div>
             <div class="clear"></div>
         </div>

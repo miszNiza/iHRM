@@ -16,6 +16,7 @@ class Personal extends CI_Controller {
                 'template'=>'personal'
             );
             
+            
             $this->load->view('header',$this->data);
             $this->load->view('aside',$this->data);
             $this->load->view('pim/view',$this->data);
@@ -23,7 +24,13 @@ class Personal extends CI_Controller {
 	}
         
         private function _validate(){
-            
+            $rules = array(
+                array(
+                    'field' => 'section',
+                    'label' => 'Section / Unit / Project',
+                    'rules' => 'required'
+                )
+            );
         }
 
         public function save(){
