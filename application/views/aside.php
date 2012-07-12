@@ -28,7 +28,7 @@
                     <a href="<?php echo site_url('pim/education'); ?>" title="">Education</a>
                 </li>
                 <li <?php if($form['template'] == 'skills') echo 'class="this"'; ?>>
-                    <a href="<?php echo site_url('pim/skill_competency'); ?>" title="">Skills And Competency</a>
+                    <a href="<?php echo site_url('pim/skills'); ?>" title="">Skills And Competency</a>
                 </li>
                 <li <?php if($form['template'] == 'development') echo 'class="this"'; ?>>
                     <a href="<?php echo site_url('pim/professional_development'); ?>" title="">Professional Development</a>
@@ -42,7 +42,7 @@
                 <li <?php if($form['template'] == 'employment') echo 'class="this"'; ?>>
                     <a href="<?php echo site_url('pim/employment'); ?>" title="">Employment</a>
                 </li>
-                <li <?php if($form['template'] == 'compensation') echo 'class="this"'; ?>>
+                <li <?php if($form['template'] == 'compensation_benefits') echo 'class="this"'; ?>>
                     <a href="<?php echo site_url('pim/compensation_benefits'); ?>" title="">Compensation &amp; Benefits</a>
                 </li>
                 <li <?php if($form['template'] == 'ea') echo 'class="this"'; ?>>

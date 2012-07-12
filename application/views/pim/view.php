@@ -26,6 +26,7 @@
                 <h5>Personal Information Module</h5>
                 <span><?php echo $form['title']; ?></span>
             </div>
+            <!--
             <div class="middleNav">
                 <ul>
                     <li class="mUser"><a title=""><span class="users"></span></a>
@@ -56,6 +57,7 @@
                 </ul>
                 <div class="clear"></div>
             </div>
+            -->
             <div class="clear"></div>
         </div>
     </div>

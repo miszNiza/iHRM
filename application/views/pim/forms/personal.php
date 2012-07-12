@@ -1,11 +1,11 @@
 <!-- Form -->
-        <?php echo form_open('', array('class'=>'form'), array('employee_id'=> $employee_id)); ?>
+        <?php echo form_open('', array('class'=>'form','id'=>'validate'), array('employee_id'=> $employee_id)); ?>
             <fieldset>
                 <div class="widget">
                     <div class="title"><img src="<?php echo site_url('assets/images'); ?>/icons/dark/list.png" alt="" class="titleIcon" /><h6></h6></div>
                     <div class="formRow">
                         <label>Section / Unit / Project</label>
-                        <div class="formRight"><?php echo form_input(array('name'=>'section')); ?></div>
+                        <div class="formRight"><?php echo form_input(array('name'=>'section','class'=>'validate[required]')); ?></div>
                         <div class="clear"></div>
                     </div>
                     <div class="formRow">
@@ -38,7 +38,7 @@
                         <div class="clear"></div>
                     </div>
                     <div class="formRow">
-                        <label>Identity Card No</label>
+                        <label>Identity Card</label>
                         <div class="formRight">
                             <?php echo form_input(array('name'=>'ic_new','placeholder'=>'New I/C')); ?>
                         </div>
@@ -53,9 +53,18 @@
                     <div class="formRow">
                         <label>Date of Birth</label>
                         <div class="formRight">
-                            <span class="oneThree"><?php echo form_input(array('name'=>'dob_day','placeholder'=>'Day')); ?></span>
-                            <span class="oneThree"><?php echo form_input(array('name'=>'dob_month','placeholder'=>'Month')); ?></span>                        
-                            <span class="oneThree"><?php echo form_input(array('name'=>'dob_year','placeholder'=>'Year')); ?></span>
+                            <span class="oneThree">
+                                <?php echo form_input(array('name'=>'dob_day','placeholder'=>'Day')); ?>
+                                <span class="formNote">DD</span>
+                            </span>
+                            <span class="oneThree">
+                                <?php echo form_input(array('name'=>'dob_month','placeholder'=>'Month')); ?>
+                                <span class="formNote">MM</span>
+                            </span>                        
+                            <span class="oneThree">
+                                <?php echo form_input(array('name'=>'dob_year','placeholder'=>'Year')); ?>
+                                <span class="formNote">YYYY</span>
+                            </span>
                         </div>
                         <div class="clear"></div>
                     </div>

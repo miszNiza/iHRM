@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Compensation_benefits extends CI_Controller {
+class Skills extends CI_Controller 
+{
 	public $data;
 	
 	public function __construct(){
@@ -12,8 +13,8 @@ class Compensation_benefits extends CI_Controller {
 	public function index(){
             
             $this->data['form'] = array(
-            'title'=>'Employee Compensation & Benefits Information',
-            'template'=>'compensation_benefits'
+                'title'=>'Employee Skills and Competency Information',
+                'template'=>'skills'
             );
             
             $this->load->view('header',$this->data);
@@ -30,4 +31,3 @@ class Compensation_benefits extends CI_Controller {
             
         }
 }
-                 
