@@ -64,8 +64,27 @@
                         </tr>
                     </tbody>
                 </table>
+<<<<<<< HEAD
                 <div class="formSubmit"><input type="submit" value="submit" class="redB"></div>
             </div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                <div class="formSubmit"><input type="submit" value="submit" class="redB"></div>
+            </div>
+=======
+                
+            </div>
+           <div class="widget">
+               <div class="formSubmit"><input type="reset" value="Reset" class="redB"> <input type="submit" value="submit" class="blueB"></div>
+               <div class="clear"></div>
+           </div>
+>>>>>>> original/pim
+=======
+                <div class="formSubmit"><input type="submit" value="submit" class="redB"></div>
+            </div>
+>>>>>>> aa4de8a6d723cd32cba0daa162446a8c0e76bf16
+>>>>>>> master
            
         <?php echo form_close(); ?>
 
@@ -105,15 +124,39 @@
                 return false;
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> aa4de8a6d723cd32cba0daa162446a8c0e76bf16
+>>>>>>> master
             
             $('a.add_row').click(function(){
                var row = '<tr><td><a href="#1" class="delete_row"><img src="<?php echo site_url('assets/images'); ?>/icons/remove.png" alt="" /></a></td><td><?php echo form_input(array('name'=>'education[][school]','style'=>'width:96%'), set_value('education[1][school]')); ?></td><td><?php echo form_input(array('name'=>'education[][school]','style'=>'width:96%'), set_value('education[1][school]')); ?></td><td><?php echo form_input(array('name'=>'education[][school]','style'=>'width:96%')); ?></td></tr>'; 
                $('#schools tbody').append(row);
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> original/pim
+=======
+>>>>>>> aa4de8a6d723cd32cba0daa162446a8c0e76bf16
+>>>>>>> master
             $('a.add_college_row').click(function(){
                 collegeRowCount++;
                 $('#college tbody').append(collegeRow);
                
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> original/pim
+=======
+=======
+>>>>>>> aa4de8a6d723cd32cba0daa162446a8c0e76bf16
+>>>>>>> master
 >>>>>>> original/pim
                
                return false;

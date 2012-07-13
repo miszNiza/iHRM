@@ -18,9 +18,12 @@
                         <div class="formRight"><?php echo form_input(array('name'=>'division')); ?></div>
                         <div class="clear"></div>
                     </div>
+<<<<<<< HEAD
                     <div class="formSubmit">
                         <input type="submit" value="Save" class="blueB">
                     </div>
+=======
+>>>>>>> master
                     <div class="clear"></div>
                 </div>
             </fieldset>
@@ -135,11 +138,21 @@
                         </div>
                         <div class="clear"></div>
                     </div>
+<<<<<<< HEAD
                     <div class="formSubmit">
                         <input type="submit" value="Save" class="blueB">
                     </div>
+=======
+>>>>>>> master
                     <div class="clear"></div>
                 </div>
                 <div id="unmask"></div>
             </fieldset>
+<<<<<<< HEAD
+=======
+            <div class="widget">
+               <div class="formSubmit"><input type="reset" value="Reset" class="redB"> <input type="submit" value="submit" class="blueB"></div>
+               <div class="clear"></div>
+            </div>
+>>>>>>> master
         <?php echo form_close(); ?>

@@ -1,12 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+<<<<<<< HEAD
 class Professional_development extends CI_Controller 
+=======
+class Employee extends CI_Controller 
+>>>>>>> master
 {
 	public $data;
 	
 	public function __construct(){
 		parent::__construct();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
                 
                 $this->data['module'] = 'pim';
 	}
@@ -22,6 +29,7 @@ class Professional_development extends CI_Controller
             $this->load->view('aside',$this->data);
             $this->load->view('pim/view',$this->data);
             $this->load->view('footer',$this->data);
+<<<<<<< HEAD
 =======
                 $this->data['module'] = 'pim';
 	}
@@ -48,3 +56,9 @@ class Professional_development extends CI_Controller
             
         }
 }
+=======
+            
+	}
+}
+
+>>>>>>> master

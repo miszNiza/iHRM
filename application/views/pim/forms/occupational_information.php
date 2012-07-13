@@ -33,7 +33,22 @@
                 </table>
             </div>    
             </fieldset>
+<<<<<<< HEAD
             
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            
+=======
+            <div class="widget">
+               <div class="formSubmit"><input type="reset" value="Reset" class="redB"> <input type="submit" value="submit" class="blueB"></div>
+               <div class="clear"></div>
+           </div>
+>>>>>>> original/pim
+=======
+            
+>>>>>>> aa4de8a6d723cd32cba0daa162446a8c0e76bf16
+>>>>>>> master
         <?php echo form_close(); ?>
 
         <script type="text/javascript">

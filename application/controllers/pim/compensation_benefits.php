@@ -1,6 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+<<<<<<< HEAD
 class Compensation_benefits extends CI_Controller {
+=======
+class Compensation_benefits extends CI_Controller 
+{
+>>>>>>> master
 	public $data;
 	
 	public function __construct(){
@@ -20,6 +25,7 @@ class Compensation_benefits extends CI_Controller {
             $this->load->view('aside',$this->data);
             $this->load->view('pim/view',$this->data);
             $this->load->view('footer',$this->data);
+<<<<<<< HEAD
 	}
         
         private function _validate(){
@@ -31,3 +37,8 @@ class Compensation_benefits extends CI_Controller {
         }
 }
                  
+=======
+            
+	}
+}
+>>>>>>> master

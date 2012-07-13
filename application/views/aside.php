@@ -30,6 +30,7 @@
                 <li <?php if($form['template'] == 'skills') echo 'class="this"'; ?>>
                     <a href="<?php echo site_url('pim/skills'); ?>" title="">Skills And Competency</a>
                 </li>
+<<<<<<< HEAD
                 <li <?php if($form['template'] == 'development') echo 'class="this"'; ?>>
                     <a href="<?php echo site_url('pim/professional_development'); ?>" title="">Professional Development</a>
                 </li>
@@ -40,6 +41,18 @@
                     <a href="<?php echo site_url('pim/family'); ?>" title="">Family Details</a>
                 </li>
                 <li <?php if($form['template'] == 'employment') echo 'class="this"'; ?>>
+=======
+                <li <?php if($form['template'] == 'professional_development') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/professional_development'); ?>" title="">Professional Development</a>
+                </li>
+                <li <?php if($form['template'] == 'occupational_information') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/occupational'); ?>" title="">Occupational</a>
+                </li>
+                <li <?php if($form['template'] == 'family_information') echo 'class="this"'; ?>>
+                    <a href="<?php echo site_url('pim/family'); ?>" title="">Family Details</a>
+                </li>
+                <li <?php if($form['template'] == 'employment_information') echo 'class="this"'; ?>>
+>>>>>>> master
                     <a href="<?php echo site_url('pim/employment'); ?>" title="">Employment</a>
                 </li>
                 <li <?php if($form['template'] == 'compensation_benefits') echo 'class="this"'; ?>>

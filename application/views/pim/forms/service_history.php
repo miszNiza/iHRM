@@ -69,9 +69,13 @@
         
     </div>
 </fieldset>
+<<<<<<< HEAD
 
 <fieldset>
 
+=======
+<fieldset>
+>>>>>>> master
  <div class="widget">
                 <div class="title">
                     <img src="<?php echo site_url('assets/images'); ?>/icons/dark/list.png" alt="" class="titleIcon"/>
@@ -81,7 +85,11 @@
                     </div>
                 </div>
           <table cellpadding="0" cellspacing="0" width="100%" class="sTable withCheck" id="record">
+<<<<<<< HEAD
                    <thead>
+=======
+                    <thead>
+>>>>>>> master
                         <tr>
                             <td></td>
                             <td>Appraiser(Name of Superior)</td>
@@ -95,13 +103,17 @@
                     <tbody class="record">
                         <tr>
                             <td><a href="#1" class="delete_row"><img src="<?php echo site_url('assets/images'); ?>/icons/remove.png" alt="" /></a></td>
+<<<<<<< HEAD
                            
+=======
+>>>>>>> master
                             <td><?php echo form_input(array('name'=>'record[][record_appraiser]', 'style'=>'width:96%'))?></td>
                             <td><span class="oneTwo"><?php echo form_input(array('name'=>'record[][record_period1]','placeholder'=>'From','style'=>'width:96%','class'=>'datepicker'));?></span>
                             <span class="oneTwo"><?php echo form_input(array('name'=>'record[][record_period2]','placeholder'=>'To','style'=>'width:96%','class'=>'datepicker'));?></span></td>
                             <td><?php echo form_input(array('name'=>'record[][record_year]','style'=>'width:96%')); ?></td>
                             <td><span class="oneTwo"><?php echo form_checkbox('record','Filed', FALSE, 'id="record_liability1"');?></span>
                            <span class="oneTwo"><?php echo form_checkbox('record','Not Filed',FALSE,'id="record_liability2"');?></span></td>                    
+<<<<<<< HEAD
                        </tr>
                    </tbody>                             
                 </table>
@@ -109,6 +121,14 @@
 </fieldset>
 
 
+=======
+                        </tr>                        
+                </table>
+</div>
+  
+</fieldset>
+
+>>>>>>> master
 <fieldset>
      <div class="widget">
                 <div class="title">
@@ -118,7 +138,11 @@
                         <a href="#" class="tipS add_row2" original-title="Add Merit Point"><img src="<?php echo site_url('assets/images'); ?>/icons/dark/add.png" alt=""></a>
                     </div>
                 </div>
+<<<<<<< HEAD
           <table cellpadding="0" cellspacing="0" width="100%" class="sTable withCheck" id="merit">
+=======
+<table cellpadding="0" cellspacing="0" width="100%" class="sTable withCheck" id="merit">
+>>>>>>> master
                     <thead>
                         <tr>
                             <td></td>
@@ -130,10 +154,15 @@
                     <tbody class="merit">
                         <tr>
                             <td><a href="#2" class="delete_row2"><img src="<?php echo site_url('assets/images'); ?>/icons/remove.png" alt="" /></a></td>
+<<<<<<< HEAD
                             <td>
                                 <?php echo form_input(array('name'=>'merit[][merit_year]','style'=>'width:96%')); ?>
                             </td>
                                 <td class="formRight">
+=======
+                            <td><?php echo form_input(array('name'=>'merit[][merit_year]','style'=>'width:96%')); ?></td>
+                            <td class="formRight">
+>>>>>>> master
                                &nbsp;&nbsp; <?php echo form_radio('merit','1', FALSE, 'id="merit_1"');?><?php echo form_label('1', 'merit_1');?> 
                                &nbsp;&nbsp; <?php echo form_radio('merit','2', FALSE, 'id="merit_2"');?><?php echo form_label('2','merit_2');?> 
                                &nbsp;&nbsp; <?php echo form_radio('merit','3', FALSE, 'id="merit_3"');?><?php echo form_label('3', 'merit_3');?> 
@@ -151,8 +180,14 @@
     <?php echo form_close();?>
 
 <script type="text/javascript">
+<<<<<<< HEAD
         $(document).ready(function(){
      $("table").delegate("a.delete_row", "click", function() {
+=======
+        $(document).ready(function()
+        {
+            $("table").delegate("a.delete_row", "click", function() {
+>>>>>>> master
                 $(this).parent().parent().remove();
             });
             
@@ -183,4 +218,7 @@
         });
     </script>
 
+<<<<<<< HEAD
                
+=======
+>>>>>>> master
